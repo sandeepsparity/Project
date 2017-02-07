@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  appDetails = {
+    title:"BooKart",
+    tagline : "We have collection of 1 Million books"
+  };
+
 }

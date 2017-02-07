@@ -1,3 +1,15 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container-fluid">
+<div id="headerWrapper">
+  <span class="logo pull-left">{{appDetails.title}}</span>
+  <span class="tagline pull-left">{{appDetails.tagline}}</span>
+  <div class="nav-wrapper pull-left">
+    <ul class="nav nav-pills">
+      <li routerLinkActive="active"><a [routerLink]="['/books']" >Books</a></li>
+      <li routerLinkActive="active"><a [routerLink]="['/kart']">Kart</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
